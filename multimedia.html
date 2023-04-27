@@ -12,13 +12,19 @@
 
     <p>video</p>
 
- <video src="cat video.mp4" width="500" height="500" controls> bbb</video>
+ <video width="500" height="500" controls> 
+     //nu cred ca se incarca video-urile daca pui src in tagul de video, sau cel putin nu pe toate browserele
+     <source src="cat video.mp4" type="video/mp4">
+     bbb</video>
 
 <p>inregistrare</p>
- <audio src="inregistrare audio.mp3"   controls   > inregistrare</audio>
+ <audio controls   > 
+     //la fel ca la video
+     <source src="inregistrare audio.mp3" type="audio/mp3">
+     inregistrare</audio>
 
 <p>youtube video</p>
-    <video  width="150" height="150"> </video>
+    //nu ai nevoie de tag de video aici, doar de iframe; cred ca oricum nu iti arata nimic
        
     <iframe width="956" height="538" src="https://www.youtube.com/embed/TZZ8G2kODQE?list=PL7aWL1nkGk0zssBjfDBtRMxtAGL3KNmAJ" title="Curs HTML si CSS in limba ROMANA pentru INCEPATORI - Introducere" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
